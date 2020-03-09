@@ -188,27 +188,26 @@ module.exports = Foods;
 
 console.log("This page is hit.")
 console.log("=============================")
-// console.log(data.report.total)
-console.log("============================= This is the length")
 
-let databaseLength = 0;
-if (databaseLength === 0) {
-const fs = require('fs');
-fs.readFile('food_data.json' , (err, data) => {
-    if (err) throw err;
-    let foods = JSON.parse(data);
 
-    foods.report.foods.forEach(function(foodItem){
-        var food = new Foods(foodItem);
-        food.save(function (err, food) {
-        if (err) return console.error(err);
-        console.log(food.name + " saved to Food collection.");
-    });
-    });
+// The following code was used to add the initial json foods data into mongo
 
-    console.log(foods);
-});
-};
+// const fs = require('fs');
+// fs.readFile('food_data.json' , (err, data) => {
+//     if (err) throw err;
+//     let foods = JSON.parse(data);
+
+//     foods.report.foods.forEach(function(foodItem){
+//         var food = new Foods(foodItem);
+//         food.save(function (err, food) {
+//         if (err) return console.error(err);
+//         console.log(food.name + " saved to Food collection.");
+//     });
+//     });
+
+//     console.log(foods);
+// });
+
 
 
 
