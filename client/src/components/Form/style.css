@@ -1,0 +1,31 @@
+label, p {
+    color:rgb(19, 86, 119);
+    font-family:"Open Sans", HelveticaNeue, "Helvetica Neue", sans-serif;
+    font-size: 18px;
+}
+.form {
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 40%;
+}
+.btn-submit{
+    background-color:rgb(73, 185, 211);
+    border-radius: 70px;
+    color: white;
+}
+.btn-submit:hover{
+    background-color:rgb(19, 86, 119);
+    color: white;
+    
+}
+.form-input{
+    background-color: rgba(222, 237, 247, 0.2);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 1024px) {
+    .form{
+        width: 80%;
+    }
+  }

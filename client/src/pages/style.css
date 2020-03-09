@@ -1,0 +1,16 @@
+
+#nutritionSearch {
+    background-color: #FFEDDF;
+    min-height: 100vh;
+}
+#nutrutionSearchResults {
+    background-color: #FFF;
+    min-height: 30vh;
+}
+
+
+.footer {
+    height: 20vh;
+    background-color: #135677;
+    color: #FFF;
+}

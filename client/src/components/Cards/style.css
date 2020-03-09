@@ -1,0 +1,14 @@
+.icard {
+    height: 250px;
+    width: 200px;
+    margin-bottom: 50px;
+    margin-top:20px;
+    border: none;
+}
+.icard img {
+    color: #135677;
+}
+.nextSteps{
+    display: flex;
+    justify-content: space-evenly;
+}

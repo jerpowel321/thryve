@@ -36,3 +36,54 @@
     transform: rotate(360deg);
   }
 }
+
+a {
+  color: #135677;
+    text-decoration: none;
+    background: transparent;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+h1{
+  color:rgb(19, 86, 119);
+  font-family:"Open Sans", HelveticaNeue, "Helvetica Neue", sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+}
+h2{
+  color:rgb(19, 86, 119);
+  font-family:"Open Sans", HelveticaNeue, "Helvetica Neue", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+}
+h3{
+  color:rgb(19, 86, 119);
+  font-family:"Open Sans", HelveticaNeue, "Helvetica Neue", sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+}
+p{
+  color:rgb(19, 86, 119);
+  font-family:"Open Sans", HelveticaNeue, "Helvetica Neue", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+#gradient {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 90px 100vw 0 0;
+  border-color: #FFEDDF #FFF transparent transparent;
+  transform: scale(1.0001);
+}
+
+/* #gradient2 {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 90px 100vw 0 0;
+  border-color: rgb(73, 185, 211) #FFEDDF transparent transparent;
+  transform: scale(1.0001);
+} */
