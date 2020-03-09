@@ -1,14 +1,14 @@
 var db = require("../models");
 
 module.exports = {
-    viewFoods: function (req, res) {
-        db.Foods
-            .findAll({})
+    findAllFood: function (req, res) {
+        console.log("Preparing all foods");
+        db.Foods.find({})
             .then(function (result) {
                 res.json(result)
             })
             .catch(function (err) {
                 console.log(err)
-            })
+            });
     }
 }

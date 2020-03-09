@@ -9,9 +9,11 @@ class Form extends React.Component {
       protein: 0,
       fat: 0,
       carbohydrate: 0,
-      sugar: 0
+      sugar: 0,
+      results: []
     };
   }
+
 
   handleInputChange = (event) => {
     // Updating State
@@ -19,9 +21,14 @@ class Form extends React.Component {
     this.setState({
       [name]: value
     });
-    console.log("Current Update:", name, value);
+    console.log(event.target.name, event.target.value);
+}
 
-  }
+    mySubmitHandler = (event) =>{
+        event.preventDefault();
+        console.log("you are submitting the form")
+        
+    }
 
   render() {
     return (
@@ -68,7 +75,7 @@ class Form extends React.Component {
           <p className="ml-5 pt-2"> Amounts are displayed in grams.</p>
         </div>
         <div className="text-center">
-        <button type="submit" className="btn btn-submit">Search Now</button>
+        <button onClick={this.mySubmitHandler} type="submit" className="btn btn-submit">Search Now</button>
         </div>
       </div>
 

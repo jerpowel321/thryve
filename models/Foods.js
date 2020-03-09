@@ -189,7 +189,10 @@ module.exports = Foods;
 console.log("This page is hit.")
 console.log("=============================")
 // console.log(data.report.total)
+console.log("============================= This is the length")
 
+let databaseLength = 0;
+if (databaseLength === 0) {
 const fs = require('fs');
 fs.readFile('food_data.json' , (err, data) => {
     if (err) throw err;
@@ -205,7 +208,7 @@ fs.readFile('food_data.json' , (err, data) => {
 
     console.log(foods);
 });
-
+};
 
 
 

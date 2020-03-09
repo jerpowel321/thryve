@@ -3,28 +3,24 @@ import Navbar from "../components/Navbar";
 import Form from "../components/Form";
 import Card from "../components/Cards";
 import "./style.css";
+import API from "../utils/API";
 
 class NutritionSearch extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      protein: '',
-      fat: 2,
-      carbohydrate: '',
-      sugar: '',
-      results: ""
+      results: []
     };
   }
 
-  handleInputChange = (event) => {
-    // Updating State
-    let { name, value } = event.target
-    this.setState({
-      [name]: value
-    })
-  }
-
   componentDidMount() {
+    console.log("THY ISNT THIS WORKING")
+    API.getAllFoods()
+      .then(res => {
+        console.log("data:", res.data)
+        this.setState({ results: res.data })
+      })
+      .catch(err => console.log(err));
 
   }
 
@@ -44,7 +40,7 @@ class NutritionSearch extends Component {
             <p>We know finding foods to improve you gut can be challenging which is why we offer a simple tool to search for foods which boost your system.</p>
 
             <div className="d-flex justify-content-center">
-              <Form />
+              <Form parentCallback={this.callbackFunction} />
             </div>
 
 
@@ -75,13 +71,18 @@ class NutritionSearch extends Component {
                   text="Eat recommended foods with peace of mind."
                 />
               </div>
+            </div>
+
+            <div id="gradient2" />
+
+            {this.state.results.map((a, i) =>
+              <div key={i} className="project" style={{ border: '5px solid colors[i]' }}>
+               <p>{a.name}</p>
               </div>
 
-              <div id="gradient2" />
+            )}
 
 
-
-  
 
           </div>
 
