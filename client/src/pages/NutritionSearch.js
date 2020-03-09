@@ -75,12 +75,13 @@ class NutritionSearch extends Component {
                   text="Eat recommended foods with peace of mind."
                 />
               </div>
+              </div>
 
               <div id="gradient2" />
 
 
 
-            </div>
+  
 
           </div>
 
